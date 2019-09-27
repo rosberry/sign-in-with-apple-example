@@ -1,0 +1,41 @@
+{% include 'header' %}
+
+protocol {{ prefix }}{{ module_info.name }}ModuleInput: class {
+
+    var state: {{ prefix }}{{ module_info.name }}State { get }
+    func update(force: Bool, animated: Bool)
+}
+
+protocol {{ prefix }}{{ module_info.name }}ModuleOutput: class {
+
+    func {{ prefix }}{{ module_info.name }}ModuleClosed(_ moduleInput: {{ prefix }}{{ module_info.name }}ModuleInput)
+}
+
+final class {{ prefix }}{{ module_info.name }}Module {
+
+    var input: {{ prefix }}{{ module_info.name }}ModuleInput {
+        return presenter
+    }
+    var output: {{ prefix }}{{ module_info.name }}ModuleOutput? {
+        get {
+            return presenter.output
+        }
+        set {
+            presenter.output = newValue
+        }
+    }
+    let viewController: {{ prefix }}{{ module_info.name }}ViewController
+    private let presenter: {{ prefix }}{{ module_info.name }}Presenter
+
+    init(state: {{ prefix }}{{ module_info.name }}State = .init()) {
+        let listItemsFactory = {{ prefix }}{{ module_info.name }}ListItemsFactory()
+        let presenter = {{ prefix }}{{ module_info.name }}Presenter(state: state, dependencies: [Any](), listItemsFactory: listItemsFactory)
+        let viewModel = {{ prefix }}{{ module_info.name }}ViewModel(state: state, listItemsFactory: listItemsFactory)
+        let viewController = {{ prefix }}{{ module_info.name }}ViewController(viewModel: viewModel, output: presenter)
+        listItemsFactory.output = presenter
+        listItemsFactory.viewController = viewController
+        presenter.view = viewController
+        self.viewController = viewController
+        self.presenter = presenter
+    }
+}

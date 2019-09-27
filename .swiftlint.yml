@@ -22,6 +22,9 @@ opt_in_rules:
   - untyped_error_in_catch
   - file_header
 
+disabled_rules:
+  - switch_case_alignment
+
 force_cast: error
 force_try: error
 
@@ -34,7 +37,7 @@ identifier_name:
     - URL
 
 statement_position:
-   statement_mode: uncuddled_else
+  statement_mode: uncuddled_else
 
 # Constants
 
@@ -52,7 +55,7 @@ function_parameter_count: 4
 
 type_name:
   min_length: 2 # only warning
-  
+
 type_contents_order:
   order:
     - case
