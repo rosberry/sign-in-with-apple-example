@@ -23,6 +23,8 @@ cartfile_path: Cartfile
 catalogs:
 - 'https://github.com/rosberry/rosberry-generamba-templates'
 templates:
-# - {name: rsb_swift_service}
+- {name: rsb_swift_mvp_vm_module}
+- {name: rsb_swift_mvp_vm_list_module}
+- {name: rsb_swift_service}
 
 

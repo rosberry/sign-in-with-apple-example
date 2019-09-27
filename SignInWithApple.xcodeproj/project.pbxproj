@@ -3,35 +3,74 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		060F086D1E4D6C9200D9166F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 060F085B1E4D6C9200D9166F /* AppDelegate.swift */; };
 		060F08711E4D6C9200D9166F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 060F08651E4D6C9200D9166F /* Assets.xcassets */; };
 		060F08731E4D6C9200D9166F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 060F08691E4D6C9200D9166F /* LaunchScreen.storyboard */; };
-		063834571F6F62AC0057A831 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063834561F6F62AC0057A831 /* ViewController.swift */; };
 		066238161F879B4D00AA6B14 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 066238181F879B4D00AA6B14 /* Localizable.strings */; };
 		0679BEDF205A4DEC0058E8F3 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0679BEDE205A4DEC0058E8F3 /* Strings.swift */; };
-		C3D08F4F2101B9B600FDC15E /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D08F4D2101B9B500FDC15E /* Assets.swift */; };
 		06DAD03A1F4E95B700FD62BD /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 06DAD0391F4E95B700FD62BD /* Settings.bundle */; };
 		06E0EBD11FAC0BB4002715AE /* AppConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06E0EBD01FAC0BB4002715AE /* AppConfigurator.swift */; };
+		117DE242A5BB6FD73E311E21 /* MainModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94AEB47FB5F88953F65B0F50 /* MainModule.swift */; };
+		31C3FBC2A3B1286D79D328A6 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233999A05A184C9D67360EF1 /* SignInViewController.swift */; };
+		4276F3AB9EC1CEE649B2FCA5 /* MainState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118C3D4C40D54727A901195B /* MainState.swift */; };
+		514E3EA4675D6618A660D943 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D357EF2861109D675B12EC /* MainViewModel.swift */; };
+		629A603DC38E9862127B6CB5 /* SignInWithAppleDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629A64CE7CD6299009F4D6B8 /* SignInWithAppleDelegate.swift */; };
+		629A60785FA6E6EF30202ABE /* SignInCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629A6DEC67C35FAB2C11F35D /* SignInCoordinator.swift */; };
+		629A621E13F7CF32976C5F95 /* KeychainService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629A69B1B3A12AF5F605EF82 /* KeychainService.swift */; };
+		629A63F0713AEFC62C68CB8D /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629A6C9B3D7313C501ECD31D /* AppCoordinator.swift */; };
+		629A648733F3690EAED9C7B8 /* ServicesFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629A60DD1778370B4936A01E /* ServicesFactory.swift */; };
+		629A65C8098E07ACD365D2EF /* ViewUpdate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629A6F8C0E0ED7F368CB925D /* ViewUpdate.swift */; };
+		629A6B2720B51E72FB0DD612 /* String+IDs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629A6D27E6AC7996EBC77C5D /* String+IDs.swift */; };
+		629A6DAC584128C47B65260A /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629A62454CE5CE037C0A949A /* Coordinator.swift */; };
+		629A6FE814B07143CA719328 /* KeychainServiceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629A67707395698D815FD26A /* KeychainServiceImpl.swift */; };
+		6B7C0EFD875130371DE533DB /* SignInPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1B213A05DB58F2EA92B5FC /* SignInPresenter.swift */; };
+		8FFB21FA52D4FCD61FEE8948 /* SignInState.swift in Sources */ = {isa = PBXBuildFile; fileRef = F355104E1C9F108EF72AF05D /* SignInState.swift */; };
+		93C55363AD9BF5BE5EFC5C03 /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE1725D90C82B6D965DD9C8 /* MainPresenter.swift */; };
+		C3D08F4F2101B9B600FDC15E /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D08F4D2101B9B500FDC15E /* Assets.swift */; };
+		C893543393D83B29B863CC8C /* SignInModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 902614EA0693B9F11CEEACDF /* SignInModule.swift */; };
+		ED6A882774CEBF123233A58D /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA226DDD36DEDC3258AB23A2 /* MainViewController.swift */; };
+		FBE4DDEA7FDF16E4EE6D53EE /* SignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447D6F9A964E66A7F32146A2 /* SignInViewModel.swift */; };
+		FE5A39DA2338DB8800E8B951 /* KeychainSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE5A39D92338DB8800E8B951 /* KeychainSwift.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		060F08441E4D6B3900D9166F /* SignInWithApple.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SignInWithApple.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		060F085B1E4D6C9200D9166F /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		060F08651E4D6C9200D9166F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		060F08691E4D6C9200D9166F /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		060F087C1E4D702C00D9166F /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		063834561F6F62AC0057A831 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		066238171F879B4D00AA6B14 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		0679BEDE205A4DEC0058E8F3 /* Strings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
-		C3D08F4D2101B9B500FDC15E /* Assets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
 		06DAD0391F4E95B700FD62BD /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		06E0EBD01FAC0BB4002715AE /* AppConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfigurator.swift; sourceTree = "<group>"; };
 		06E0EBD21FAC0D4B002715AE /* Cartfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cartfile; sourceTree = SOURCE_ROOT; };
 		06E0EBD41FAC0D97002715AE /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = .swiftlint.yml; sourceTree = SOURCE_ROOT; };
-		060F08651E4D6C9200D9166F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		118C3D4C40D54727A901195B /* MainState.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainState.swift; sourceTree = "<group>"; };
+		233999A05A184C9D67360EF1 /* SignInViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		447D6F9A964E66A7F32146A2 /* SignInViewModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SignInViewModel.swift; sourceTree = "<group>"; };
+		629A60DD1778370B4936A01E /* ServicesFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServicesFactory.swift; sourceTree = "<group>"; };
+		629A62454CE5CE037C0A949A /* Coordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		629A64CE7CD6299009F4D6B8 /* SignInWithAppleDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInWithAppleDelegate.swift; sourceTree = "<group>"; };
+		629A67707395698D815FD26A /* KeychainServiceImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainServiceImpl.swift; sourceTree = "<group>"; };
+		629A69B1B3A12AF5F605EF82 /* KeychainService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainService.swift; sourceTree = "<group>"; };
+		629A6C9B3D7313C501ECD31D /* AppCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		629A6D27E6AC7996EBC77C5D /* String+IDs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+IDs.swift"; sourceTree = "<group>"; };
+		629A6DEC67C35FAB2C11F35D /* SignInCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInCoordinator.swift; sourceTree = "<group>"; };
+		629A6F8C0E0ED7F368CB925D /* ViewUpdate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewUpdate.swift; sourceTree = "<group>"; };
+		6F1B213A05DB58F2EA92B5FC /* SignInPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SignInPresenter.swift; sourceTree = "<group>"; };
+		83D357EF2861109D675B12EC /* MainViewModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		902614EA0693B9F11CEEACDF /* SignInModule.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SignInModule.swift; sourceTree = "<group>"; };
+		94AEB47FB5F88953F65B0F50 /* MainModule.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainModule.swift; sourceTree = "<group>"; };
+		C3D08F4D2101B9B500FDC15E /* Assets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
+		EA226DDD36DEDC3258AB23A2 /* MainViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		EFE1725D90C82B6D965DD9C8 /* MainPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
+		F355104E1C9F108EF72AF05D /* SignInState.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SignInState.swift; sourceTree = "<group>"; };
+		FE44B4F12338B5440092C2FD /* SignInWithApple.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SignInWithApple.entitlements; sourceTree = "<group>"; };
+		FE5A39D92338DB8800E8B951 /* KeychainSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KeychainSwift.framework; path = Carthage/Build/iOS/KeychainSwift.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE5A39DA2338DB8800E8B951 /* KeychainSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,6 +92,7 @@
 				060F08641E4D6C9200D9166F /* Resources */,
 				060F087B1E4D702C00D9166F /* SignInWithApple */,
 				060F08451E4D6B3900D9166F /* Products */,
+				FE5A39D82338DB8800E8B951 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -87,6 +128,8 @@
 		060F085F1E4D6C9200D9166F /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				629A6B9C7EFC89D215C68E8C /* KeychainService */,
+				629A60DD1778370B4936A01E /* ServicesFactory.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -95,6 +138,7 @@
 			isa = PBXGroup;
 			children = (
 				060F08621E4D6C9200D9166F /* Modules */,
+				629A651C705060DC6A010463 /* Coordinators */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -102,7 +146,8 @@
 		060F08621E4D6C9200D9166F /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				063834561F6F62AC0057A831 /* ViewController.swift */,
+				4BB81BA38A098921D3244157 /* Main */,
+				F11054BBB72B45527ED390BC /* SignIn */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -129,19 +174,102 @@
 		060F087B1E4D702C00D9166F /* SignInWithApple */ = {
 			isa = PBXGroup;
 			children = (
+				FE44B4F12338B5440092C2FD /* SignInWithApple.entitlements */,
 				06E0EBD21FAC0D4B002715AE /* Cartfile */,
 				06E0EBD41FAC0D97002715AE /* .swiftlint.yml */,
 				060F087C1E4D702C00D9166F /* Info.plist */,
 				06DAD0391F4E95B700FD62BD /* Settings.bundle */,
 			);
-			path = "SignInWithApple";
+			path = SignInWithApple;
 			sourceTree = "<group>";
 		};
 		060F089C1E4D79C000D9166F /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				629A62454CE5CE037C0A949A /* Coordinator.swift */,
+				629A6F8C0E0ED7F368CB925D /* ViewUpdate.swift */,
+				629A6D27E6AC7996EBC77C5D /* String+IDs.swift */,
 			);
 			path = Core;
+			sourceTree = "<group>";
+		};
+		4BB81BA38A098921D3244157 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				94AEB47FB5F88953F65B0F50 /* MainModule.swift */,
+				EA226DDD36DEDC3258AB23A2 /* MainViewController.swift */,
+				83D357EF2861109D675B12EC /* MainViewModel.swift */,
+				EFE1725D90C82B6D965DD9C8 /* MainPresenter.swift */,
+				C1F61355730E0AFC5C118322 /* State */,
+			);
+			name = Main;
+			path = Main;
+			sourceTree = "<group>";
+		};
+		5415DE33DE513464F2BEA7CC /* State */ = {
+			isa = PBXGroup;
+			children = (
+				F355104E1C9F108EF72AF05D /* SignInState.swift */,
+			);
+			name = State;
+			path = State;
+			sourceTree = "<group>";
+		};
+		629A651C705060DC6A010463 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				629A6C9B3D7313C501ECD31D /* AppCoordinator.swift */,
+				629A6A55414522761A098D03 /* SignIn */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		629A6A55414522761A098D03 /* SignIn */ = {
+			isa = PBXGroup;
+			children = (
+				629A6DEC67C35FAB2C11F35D /* SignInCoordinator.swift */,
+				629A64CE7CD6299009F4D6B8 /* SignInWithAppleDelegate.swift */,
+			);
+			path = SignIn;
+			sourceTree = "<group>";
+		};
+		629A6B9C7EFC89D215C68E8C /* KeychainService */ = {
+			isa = PBXGroup;
+			children = (
+				629A69B1B3A12AF5F605EF82 /* KeychainService.swift */,
+				629A67707395698D815FD26A /* KeychainServiceImpl.swift */,
+			);
+			path = KeychainService;
+			sourceTree = "<group>";
+		};
+		C1F61355730E0AFC5C118322 /* State */ = {
+			isa = PBXGroup;
+			children = (
+				118C3D4C40D54727A901195B /* MainState.swift */,
+			);
+			name = State;
+			path = State;
+			sourceTree = "<group>";
+		};
+		F11054BBB72B45527ED390BC /* SignIn */ = {
+			isa = PBXGroup;
+			children = (
+				902614EA0693B9F11CEEACDF /* SignInModule.swift */,
+				233999A05A184C9D67360EF1 /* SignInViewController.swift */,
+				447D6F9A964E66A7F32146A2 /* SignInViewModel.swift */,
+				6F1B213A05DB58F2EA92B5FC /* SignInPresenter.swift */,
+				5415DE33DE513464F2BEA7CC /* State */,
+			);
+			name = SignIn;
+			path = SignIn;
+			sourceTree = "<group>";
+		};
+		FE5A39D82338DB8800E8B951 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FE5A39D92338DB8800E8B951 /* KeychainSwift.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -162,7 +290,7 @@
 			);
 			dependencies = (
 			);
-			name = "SignInWithApple";
+			name = SignInWithApple;
 			productName = SignInWithApple;
 			productReference = 060F08441E4D6B3900D9166F /* SignInWithApple.app */;
 			productType = "com.apple.product-type.application";
@@ -175,10 +303,11 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0820;
 				LastUpgradeCheck = 1000;
-				ORGANIZATIONNAME = "Rosberry";
+				ORGANIZATIONNAME = Rosberry;
 				TargetAttributes = {
 					060F08431E4D6B3900D9166F = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = GPVA8JVMU3;
 						LastSwiftMigration = 1020;
 						ProvisioningStyle = Manual;
 					};
@@ -237,14 +366,20 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
+			inputFileListPaths = (
+				"$(SRCROOT)/Carthage/xcfilelists/SignInWithApple-inputPaths.xcfilelist",
+			);
 			inputPaths = (
 			);
 			name = Carthage;
+			outputFileListPaths = (
+				"$(SRCROOT)/Carthage/xcfilelists/SignInWithApple-outputPaths.xcfilelist",
+			);
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/carthage copy-frameworks";
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
 			showEnvVarsInLog = 0;
 		};
 		061C7AE8213859B800D16625 /* Swiftgen */ = {
@@ -262,7 +397,6 @@
 			shellScript = ./Scripts/swiftgen_script.sh;
 			showEnvVarsInLog = 0;
 		};
-
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -272,9 +406,27 @@
 			files = (
 				0679BEDF205A4DEC0058E8F3 /* Strings.swift in Sources */,
 				C3D08F4F2101B9B600FDC15E /* Assets.swift in Sources */,
-				063834571F6F62AC0057A831 /* ViewController.swift in Sources */,
 				060F086D1E4D6C9200D9166F /* AppDelegate.swift in Sources */,
 				06E0EBD11FAC0BB4002715AE /* AppConfigurator.swift in Sources */,
+				629A621E13F7CF32976C5F95 /* KeychainService.swift in Sources */,
+				629A6FE814B07143CA719328 /* KeychainServiceImpl.swift in Sources */,
+				629A6DAC584128C47B65260A /* Coordinator.swift in Sources */,
+				629A63F0713AEFC62C68CB8D /* AppCoordinator.swift in Sources */,
+				629A648733F3690EAED9C7B8 /* ServicesFactory.swift in Sources */,
+				117DE242A5BB6FD73E311E21 /* MainModule.swift in Sources */,
+				ED6A882774CEBF123233A58D /* MainViewController.swift in Sources */,
+				514E3EA4675D6618A660D943 /* MainViewModel.swift in Sources */,
+				93C55363AD9BF5BE5EFC5C03 /* MainPresenter.swift in Sources */,
+				4276F3AB9EC1CEE649B2FCA5 /* MainState.swift in Sources */,
+				629A65C8098E07ACD365D2EF /* ViewUpdate.swift in Sources */,
+				C893543393D83B29B863CC8C /* SignInModule.swift in Sources */,
+				31C3FBC2A3B1286D79D328A6 /* SignInViewController.swift in Sources */,
+				FBE4DDEA7FDF16E4EE6D53EE /* SignInViewModel.swift in Sources */,
+				6B7C0EFD875130371DE533DB /* SignInPresenter.swift in Sources */,
+				8FFB21FA52D4FCD61FEE8948 /* SignInState.swift in Sources */,
+				629A6B2720B51E72FB0DD612 /* String+IDs.swift in Sources */,
+				629A60785FA6E6EF30202ABE /* SignInCoordinator.swift in Sources */,
+				629A603DC38E9862127B6CB5 /* SignInWithAppleDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -401,7 +553,8 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = ADHOC;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -411,18 +564,28 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SignInWithApple/SignInWithApple.entitlements;
 				"DEBUG_INFORMATION_FORMAT[sdk=iphoneos*]" = "dwarf-with-dsym";
 				"DEBUG_INFORMATION_FORMAT[sdk=iphonesimulator*]" = dwarf;
-				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = "SignInWithApple/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				DEVELOPMENT_TEAM = GPVA8JVMU3;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = SignInWithApple/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				OTHER_SWIFT_FLAGS = "-Xfrontend -debug-time-function-bodies";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.rosberry.signinwithapple";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rosberry.signinwithapple;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = SignInWithAppleDev;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEV_SERVER DEBUG";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = "Debug Development";
 		};
@@ -430,14 +593,24 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = "SignInWithApple/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.rosberry.signinwithapple";
+				CODE_SIGN_ENTITLEMENTS = SignInWithApple/SignInWithApple.entitlements;
+				DEVELOPMENT_TEAM = GPVA8JVMU3;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = SignInWithApple/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rosberry.signinwithapple;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = SignInWithAppleDev;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEV_SERVER ADHOC";
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = "AdHoc Development";
 		};
@@ -504,18 +677,28 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SignInWithApple/SignInWithApple.entitlements;
 				"DEBUG_INFORMATION_FORMAT[sdk=iphoneos*]" = "dwarf-with-dsym";
 				"DEBUG_INFORMATION_FORMAT[sdk=iphonesimulator*]" = dwarf;
-				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = "SignInWithApple/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				DEVELOPMENT_TEAM = GPVA8JVMU3;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = SignInWithApple/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				OTHER_SWIFT_FLAGS = "-Xfrontend -debug-time-function-bodies";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.rosberry.signinwithapple";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rosberry.signinwithapple;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = SignInWithAppleDev;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "STAGING_SERVER DEBUG";
 				SWIFT_OPTIMIZATION_LEVEL = "-0none";
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = "Debug Staging";
 		};
@@ -582,18 +765,28 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SignInWithApple/SignInWithApple.entitlements;
 				"DEBUG_INFORMATION_FORMAT[sdk=iphoneos*]" = "dwarf-with-dsym";
 				"DEBUG_INFORMATION_FORMAT[sdk=iphonesimulator*]" = dwarf;
-				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = "SignInWithApple/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				DEVELOPMENT_TEAM = GPVA8JVMU3;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = SignInWithApple/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				OTHER_SWIFT_FLAGS = "-Xfrontend -debug-time-function-bodies";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.rosberry.signinwithapple";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rosberry.signinwithapple;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = SignInWithAppleDev;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "PRODUCTION_SERVER DEBUG";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = "Debug Production";
 		};
@@ -645,7 +838,8 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = ADHOC;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -655,14 +849,24 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = "SignInWithApple/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.rosberry.signinwithapple";
+				CODE_SIGN_ENTITLEMENTS = SignInWithApple/SignInWithApple.entitlements;
+				DEVELOPMENT_TEAM = GPVA8JVMU3;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = SignInWithApple/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rosberry.signinwithapple;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = SignInWithAppleDev;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "STAGING_SERVER ADHOC";
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = "AdHoc Staging";
 		};
@@ -714,7 +918,8 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = ADHOC;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -724,14 +929,24 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = "SignInWithApple/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.rosberry.signinwithapple";
+				CODE_SIGN_ENTITLEMENTS = SignInWithApple/SignInWithApple.entitlements;
+				DEVELOPMENT_TEAM = GPVA8JVMU3;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = SignInWithApple/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rosberry.signinwithapple;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = SignInWithAppleDev;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "PRODUCTION_SERVER ADHOC";
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = "AdHoc Production";
 		};
@@ -783,7 +998,8 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = APPSTORE;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -793,13 +1009,23 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = "SignInWithApple/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.rosberry.signinwithapple";
+				CODE_SIGN_ENTITLEMENTS = SignInWithApple/SignInWithApple.entitlements;
+				DEVELOPMENT_TEAM = GPVA8JVMU3;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = SignInWithApple/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rosberry.signinwithapple;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = SignInWithAppleDev;
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = AppStore;
 		};
@@ -863,15 +1089,25 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = "SignInWithApple/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				CODE_SIGN_ENTITLEMENTS = SignInWithApple/SignInWithApple.entitlements;
+				DEVELOPMENT_TEAM = GPVA8JVMU3;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = SignInWithApple/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				OTHER_SWIFT_FLAGS = "-Xfrontend -debug-time-function-bodies -Xfrontend -warn-long-function-bodies=100 -Xfrontend -warn-long-expression-type-checking=100";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.rosberry.signinwithapple";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rosberry.signinwithapple;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = SignInWithAppleDev;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Analyze;
 		};

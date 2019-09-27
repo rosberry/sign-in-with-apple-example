@@ -1,0 +1,12 @@
+{% include 'header' %}
+
+import CollectionViewTools
+
+final class {{ prefix }}{{ module_info.name }}ViewModel {
+
+    let listSectionItems: [GeneralCollectionViewDiffableSectionItem]
+
+    init(state: {{ prefix }}{{ module_info.name }}State, listItemsFactory: {{ prefix }}{{ module_info.name }}ListItemsFactory) {
+    	listSectionItems = listItemsFactory.makeSectionItems(state: state)
+    }
+}
